@@ -62,4 +62,4 @@ repoURL: https://github.com/cadugrillo/s7-mcp-bridge
 toolPreview: []
 runtime: remote
 remoteConfig:
-  urlTemplate: http://<your-S7-MCP-Bridge-ip-address>:57001/mcp
+  urlTemplate: http://${S7_MCP_BRIDGE_IP_ADDRESS}:57001/mcp
