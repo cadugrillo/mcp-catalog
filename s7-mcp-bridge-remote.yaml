@@ -63,3 +63,7 @@ toolPreview: []
 runtime: remote
 remoteConfig:
   urlTemplate: http://${S7_MCP_BRIDGE_IP_ADDRESS}:57001/mcp
+  headers:
+  - name: S7 MCP BRIDGE IP ADDRESS
+    description: The ip address of the running instance of S7 MCP Bridge.
+    required: true
