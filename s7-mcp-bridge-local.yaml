@@ -5,9 +5,12 @@ description: '**S7 MCP Bridge** is a MCP Server that connects AI agents to Sieme
 
   ## Available Tools
 
-  - User authentication (`Api-Login`, `Api-Logout`, `Api-ChangePassword`) 
-  - Check PLC connectivity (`Api-Ping`) 
-  - Retrieve user permissions (`Api-GetPermissions`) 
+  - User authentication (`Api-Login`, `Api-Logout`, `Api-ChangePassword`)
+  
+  - Check PLC connectivity (`Api-Ping`)
+  
+  - Retrieve user permissions (`Api-GetPermissions`)
+  
   - Get API version (`Api-Version`) 
   - List available API methods (`Api-Browse`) 
   - Retrieve structure information (`Api-GetQuantityStructures`) 
