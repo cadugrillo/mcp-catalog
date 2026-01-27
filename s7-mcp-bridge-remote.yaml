@@ -51,7 +51,11 @@ description: '**S7 MCP Bridge** is a MCP Server that connects AI agents to Sieme
   ## What you''ll need to connect
 
 
-  - **Remote S7 MCP Bridge url**: The url of the remote running instance of S7 MCP Bridge.
+   **Required:**
+
+  - **S7 MCP BRIDGE IP ADDRESS**: The ip address of the running instance of S7 MCP Bridge.
+
+  - **S7 MCP BRIDGE PORT**: The port of the running instance of S7 MCP Bridge (Default is 57001).
 
 
   '
@@ -59,11 +63,18 @@ metadata:
   categories: Industrial Automation, ai, plc, siemens, s7, llm
 icon: https://raw.githubusercontent.com/cadugrillo/s7-mcp-bridge/main/logo.png
 repoURL: https://github.com/cadugrillo/s7-mcp-bridge
+env:
+- key: S7_MCP_BRIDGE_IP_ADDRESS
+  name: S7 MCP BRIDGE IP ADDRESS
+  required: true
+  sensitive: false
+  description: The ip address of the running instance of S7 MCP Bridge.
+- key: S7_MCP_BRIDGE_PORT
+  name: S7 MCP BRIDGE PORT
+  required: true
+  sensitive: false
+  description: The port of the running instance of S7 MCP Bridge (Default is 57001).
 toolPreview: []
 runtime: remote
 remoteConfig:
-  urlTemplate: http://${S7_MCP_BRIDGE_IP_ADDRESS}:57001/mcp
-  headers:
-  - name: S7 MCP BRIDGE IP ADDRESS
-    description: The ip address of the running instance of S7 MCP Bridge.
-    required: true
+  urlTemplate: http://${S7_MCP_BRIDGE_IP_ADDRESS}:${S7_MCP_BRIDGE_PORT}/mcp
