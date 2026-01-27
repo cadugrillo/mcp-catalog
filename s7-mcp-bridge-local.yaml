@@ -11,24 +11,41 @@ description: '**S7 MCP Bridge** is a MCP Server that connects AI agents to Sieme
   
   - Retrieve user permissions (`Api-GetPermissions`)
   
-  - Get API version (`Api-Version`) 
-  - List available API methods (`Api-Browse`) 
-  - Retrieve structure information (`Api-GetQuantityStructures`) 
-  - Get password security policies (`Api-GetPasswordPolicy`) 
-  - Browse tags and metadata (`PlcProgram-Browse`) 
-  - Read single variables (`PlcProgram-Read`) 
-  - Write Boolean, Number, or String tags (`PlcProgram-Write`) 
-  - Read the current CPU operating mode (`Plc-ReadOperatingMode`) 
-  - Request a change of operating mode (`Plc-RequestChangeOperatingMode`) 
-  - Read the CPU system time (`Plc-ReadSystemTime`) 
-  - Set the CPU system time (`Plc-SetSystemTime`) 
-  - Read available project languages (`Project-ReadLanguages`) 
-  - Browse active alarms (`Alarms-Browse`) 
-  - Acknowledge alarms (`Alarms-Acknowledge`) 
-  - Browse diagnostic buffer entries (`DiagnosticBuffer-Browse`) 
-  - List all configured PLCs via env variables (`List-AvailablePlcs`) 
-  - Create backup file of the CPU (`Plc-CreateBackup`) 
-  - Delete a ticket provided by the system (`Api-CloseTicket`) 
+  - Get API version (`Api-Version`)
+  
+  - List available API methods (`Api-Browse`)
+  
+  - Retrieve structure information (`Api-GetQuantityStructures`)
+  
+  - Get password security policies (`Api-GetPasswordPolicy`)
+  
+  - Browse tags and metadata (`PlcProgram-Browse`)
+  
+  - Read single variables (`PlcProgram-Read`)
+  
+  - Write Boolean, Number, or String tags (`PlcProgram-Write`)
+  
+  - Read the current CPU operating mode (`Plc-ReadOperatingMode`)
+  
+  - Request a change of operating mode (`Plc-RequestChangeOperatingMode`)
+  
+  - Read the CPU system time (`Plc-ReadSystemTime`)
+  
+  - Set the CPU system time (`Plc-SetSystemTime`)
+  
+  - Read available project languages (`Project-ReadLanguages`)
+  
+  - Browse active alarms (`Alarms-Browse`)
+  
+  - Acknowledge alarms (`Alarms-Acknowledge`)
+  
+  - Browse diagnostic buffer entries (`DiagnosticBuffer-Browse`)
+  
+  - List all configured PLCs via env variables (`List-AvailablePlcs`)
+  
+  - Create backup file of the CPU (`Plc-CreateBackup`)
+  
+  - Delete a ticket provided by the system (`Api-CloseTicket`)
 
 
   ## What you''ll need to connect
