@@ -62,4 +62,4 @@ repoURL: https://github.com/cadugrillo/s7-mcp-bridge
 toolPreview: []
 runtime: remote
 remoteConfig:
-  fixedURL: https://mcp.atlassian.com/v1/sse
+  URL: https://mcp.atlassian.com/v1/sse
