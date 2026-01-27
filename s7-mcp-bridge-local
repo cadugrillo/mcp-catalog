@@ -1,0 +1,65 @@
+name: S7 MCP Bridge - Local
+shortDescription: S7 MCP Bridge is a MCP Server that connects AI agents to Siemens industrial PLCs (specifically S7-1500 and S7-1200 models).
+description: '**S7 MCP Bridge** is a MCP Server that connects AI agents to Siemens industrial PLCs (specifically S7-1500 and S7-1200 models). This allows AI agents to automatically monitor and control industrial equipment by sending commands and receiving data from the machines.
+
+
+  ## Available Tools
+
+  - User authentication (`Api-Login`, `Api-Logout`, `Api-ChangePassword`)
+  - Check PLC connectivity (`Api-Ping`)
+  - Retrieve user permissions (`Api-GetPermissions`)
+  - Get API version (`Api-Version`)
+  - List available API methods (`Api-Browse`)
+  - Retrieve structure information (`Api-GetQuantityStructures`)
+  - Get password security policies (`Api-GetPasswordPolicy`)
+  - Browse tags and metadata (`PlcProgram-Browse`)
+  - Read single variables (`PlcProgram-Read`)
+  - Write Boolean, Number, or String tags (`PlcProgram-Write`)
+  - Read the current CPU operating mode (`Plc-ReadOperatingMode`)
+  - Request a change of operating mode (`Plc-RequestChangeOperatingMode`)
+  - Read the CPU system time (`Plc-ReadSystemTime`)
+  - Set the CPU system time (`Plc-SetSystemTime`)
+  - Read available project languages (`Project-ReadLanguages`)
+  - Browse active alarms (`Alarms-Browse`)
+  - Acknowledge alarms (`Alarms-Acknowledge`)
+  - Browse diagnostic buffer entries (`DiagnosticBuffer-Browse`)
+  - List all configured PLCs via env variables (`List-AvailablePlcs`)
+  - Create backup file of the CPU (`Plc-CreateBackup`)
+  - Delete a ticket provided by the system (`Api-CloseTicket`)
+
+
+  ## What you''ll need to connect
+
+
+ **Required:**
+
+  - **PLC IP ADDRESSES**: IP addresses of available PLCs separated by comma e.g.. 192.168.1.10, 192.168.1.20.
+
+ 
+  **Optional:**
+
+  - **PLC NAMES**: Names of available PLCs separated by comma e.g.. Machine1, Machine2.
+
+  '
+metadata:
+  categories: Industrial Automation, ai, plc, siemens, s7, llm
+icon: https://raw.githubusercontent.com/cadugrillo/s7-mcp-bridge/main/logo.png
+repoURL: https://github.com/cadugrillo/s7-mcp-bridge
+env:
+- key: PLC_IP_ADDRESSES
+  name: PLC IP ADDRESSES
+  required: true
+  sensitive: false
+  description: IP addresses of available PLCs separated by comma e.g.. 192.168.1.10, 192.168.1.20.
+- key: PLC_NAMES
+  name: PLC NAMES
+  required: false
+  sensitive: false
+  description: Names of available PLCs separated by comma e.g.. Machine1, Machine2.
+toolPreview: []
+runtime: containerized
+containerizedConfig:
+  image: cadugrillo/s7-mcp-bridge:latest
+  port: 57001
+  path: /mcp
+  args: []
