@@ -61,4 +61,5 @@ icon: https://raw.githubusercontent.com/cadugrillo/s7-mcp-bridge/main/logo.png
 repoURL: https://github.com/cadugrillo/s7-mcp-bridge
 toolPreview: []
 runtime: remote
-remoteConfig: []
+remoteConfig:
+  fixedURL: https://mcp.atlassian.com/v1/sse
