@@ -76,10 +76,15 @@ env:
   required: false
   sensitive: false
   description: Names of available PLCs separated by comma e.g.. Machine1, Machine2.
+- key: MCP_SERVER_PORT
+  name: MCP SERVER PORT
+  required: true
+  sensitive: false
+  description: If not set, it defaults to 57001.
 toolPreview: []
 runtime: containerized
 containerizedConfig:
   image: cadugrillo/s7-mcp-bridge:latest
-  port: 57001
+  port: 8099
   path: /mcp
   args: []
