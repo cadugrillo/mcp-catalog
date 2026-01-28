@@ -55,6 +55,8 @@ description: '**S7 MCP Bridge** is a MCP Server that connects AI agents to Sieme
 
   - **PLC IP ADDRESSES**: IP addresses of available PLCs separated by comma e.g.. 192.168.1.10, 192.168.1.20.
 
+  - **MCP SERVER PORT**: It should always be set to 8099.
+
  
   **Optional:**
 
