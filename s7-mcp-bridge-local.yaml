@@ -80,7 +80,7 @@ env:
   name: MCP SERVER PORT
   required: true
   sensitive: false
-  description: If not set, it defaults to 57001.
+  description: It should be set to 8099.
 toolPreview: []
 runtime: containerized
 containerizedConfig:
